@@ -46,10 +46,18 @@ a:link{color: white}
 a:visited{color: #49394d}
 a:hover{color: black;}
 
+#imagendescarga { height: 200px; width: 200px;}
+#imagenafuera { height: 200px; width: 200px;}
+#imagenbolsas3 { height: 200px; width: 200px;}
+#imagenbolsas2 { height: 200px; width: 200px;}
+#imagenestante { height: 200px; width: 200px;}
+#imagenestante2 { height: 200px; width: 200px;}
+#imagenpiedritas { height: 200px; width: 200px;}
+#imagenmostrador { height: 200px; width: 200px;}
+
 .principal{
     grid-area: principal;
-   
-}
+    }
 
 
 .pie { grid-area: pie;
