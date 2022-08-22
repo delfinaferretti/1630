@@ -46,7 +46,7 @@ a:link{color: white}
 a:visited{color: #49394d}
 a:hover{color: black;}
 
-#principal{
+.principal{
     grid-area: principal;
    
 }
