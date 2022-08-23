@@ -2,13 +2,16 @@
 padding: 0;
 box-sizing: border-box;}
 
+.caja {
+    transform: scale(3vh,3vh);
+}
 
 .grilla {
-    height: 100vh;
+    
     background-image: linear-gradient(white, rgb(136, 66, 136));
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "titulo titulo"
                          "menu principal"
                          "pie pie";
@@ -54,6 +57,22 @@ a:hover{color: black;}
 #imagenestante2 { height: 200px; width: 200px;}
 #imagenpiedritas { height: 200px; width: 200px;}
 #imagenmostrador { height: 200px; width: 200px;}
+
+.container {
+    list-style: none;
+    width: 12em;
+    height: 8em;
+    background-color: rgb(235, 157, 228);
+    color: white;
+    transform-style: preserve-3d;
+
+}
+.container:hover {transform:scale(2,2)}
+
+#cirugias{font-size: xx-large;
+font-style: oblique;}
+#consultaMedica{font-size: xx-large;
+font-style: oblique;}
 
 .principal{
     grid-area: principal;
