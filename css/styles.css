@@ -2,9 +2,6 @@
 padding: 0;
 box-sizing: border-box;}
 
-.caja {
-    transform: scale(3vh,3vh);
-}
 
 .grilla {
     
@@ -42,40 +39,37 @@ box-sizing: border-box;}
     border: solid 1px rgb(51, 0, 51);
     text-align: center;
     border-radius: 5px;
+  
 }
 
 ul li a{ text-decoration: none;}
 a:link{color: white}    
 a:visited{color: #49394d}
-a:hover{color: black;}
-
-#imagendescarga { height: 200px; width: 200px;}
-#imagenafuera { height: 200px; width: 200px;}
-#imagenbolsas3 { height: 200px; width: 200px;}
-#imagenbolsas2 { height: 200px; width: 200px;}
-#imagenestante { height: 200px; width: 200px;}
-#imagenestante2 { height: 200px; width: 200px;}
-#imagenpiedritas { height: 200px; width: 200px;}
-#imagenmostrador { height: 200px; width: 200px;}
-
-.container {
-    list-style: none;
-    width: 12em;
-    height: 8em;
-    background-color: rgb(235, 157, 228);
-    color: white;
-    transform-style: preserve-3d;
-
+a:hover{color: black;
+    
 }
-.container:hover {transform:scale(2,2)}
 
-#cirugias{font-size: xx-large;
-font-style: oblique;}
-#consultaMedica{font-size: xx-large;
-font-style: oblique;}
+#imagendescarga { height: 30vh; width: 30vh;}
+#imagenafuera { height: 30vh; width: 30vh;}
+#imagenbolsas3 { height: 30vh; width: 30vh;}
+#imagenbolsas2 { height: 30vh; width: 30vh;}
+#imagenestante { height: 30vh; width: 30vh;}
+#imagenestante2 { height: 30vh; width: 30vh;}
+#imagenpiedritas { height: 30vh; width: 30vh;}
+#imagenmostrador { height: 30vh; width: 30vh;}
+#imagendoc { height: 80vh; width: 120vh;
+             border: solid 1px black }
+
+.item:hover {transform:scale(1,2)}
+
+
 
 .principal{
     grid-area: principal;
+    font-style: italic;
+    font-size: 3vh;
+    color: black; 
+      
     }
 
 
@@ -83,6 +77,8 @@ font-style: oblique;}
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    font-size:2,5vh;
+    color:white;
         }
        
 
