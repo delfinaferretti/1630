@@ -31,7 +31,7 @@ box-sizing: border-box;}
     justify-content: center;
     align-items: center;
 }
-
+.menu2 {display: none;}
 .item {
     list-style-type: none;
     cursor: pointer;
@@ -49,24 +49,15 @@ a:hover{color: black;
     
 }
 
-#imagendescarga { height: 30vh; width: 30vh;}
-#imagenafuera { height: 30vh; width: 30vh;}
-#imagenbolsas3 { height: 30vh; width: 30vh;}
-#imagenbolsas2 { height: 30vh; width: 30vh;}
-#imagenestante { height: 30vh; width: 30vh;}
-#imagenestante2 { height: 30vh; width: 30vh;}
-#imagenpiedritas { height: 30vh; width: 30vh;}
-#imagenmostrador { height: 30vh; width: 30vh;}
-#imagendoc { height: 80vh; width: 120vh;
-             border: solid 1px black }
-
+.imagenmain { height: 30vh; width: 30vh;}
+#imagen-veterinario {width: 120vh;
+                     height: 80vh;}
 .item:hover {transform:scale(1,2)}
-
 
 
 .principal{
     grid-area: principal;
-    font-style: italic;
+    font:bolder ;
     font-size: 3vh;
     color: black; 
       
@@ -81,7 +72,25 @@ a:hover{color: black;
     color:white;
         }
        
-
+ .dropdown {
+           border: 1px solid black;
+           display: inline-block;
+         }
+.dropdown-content {
+            display: none;
+            position: absolute;
+            overflow: auto;
+            box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+          }
+.dropdown:hover .dropdown-content {
+            display:block;
+            transform:scale(1,2);
+          }
+          
+.dropdown-content:hover {
+            color: #FFFFFF;
+            background-color: #ad00bd;
+          }
 
 
     @media screen and (max-width: 500px) {
@@ -93,11 +102,45 @@ a:hover{color: black;
        }
        .grilla {
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-rows: .5fr .5fr 2.5fr .5fr;
         grid-template-areas: "titulo"
                              "menu"
                              "principal"
                              "pie";
         }
+        .imagenmain { height: 14vh; width: 14vh;}
+        #imagen-veterinario {width: 50vh; height: 40vh;}
+        .item {
+            font-size: 3vh;          
+        }
+        #menu {display:none}
+        .menu2 {
+            display: flex;
+            justify-content: center;
+            
+        }
+        #menu-2-logo {
+            display: flex;
+            color:#49394d;
+            border: solid 1px rgb(51, 0, 51);
+            border-radius: 10px;
+            font-size: 5vh;
+    }
+        .menu2-content {display: none;
+            position: absolute;
+            background-color: #a02ab8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;}    
+        .menu2-content a {color: rgb(248, 239, 239);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;}    
+        .menu2-content a:hover {background-color: #b971c7}
+        .menu2:hover .menu2-content {display: block;}
+
+
+
+       
     }
 
