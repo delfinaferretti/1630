@@ -120,14 +120,14 @@ a:hover{color: black;
             
         }
         #menu-2-logo {
+            height: 15vh;
+            width: 15vh;
             display: flex;
             color:#49394d;
-            border: solid 1px rgb(51, 0, 51);
-            border-radius: 10px;
             font-size: 5vh;
     }
         .menu2-content {display: none;
-            position: absolute;
+            
             background-color: #a02ab8;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
